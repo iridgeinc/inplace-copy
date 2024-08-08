@@ -40,11 +40,6 @@
       "prettier --write"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
   "jest": {
     "transform": {
       ".(ts|tsx)": "ts-jest"
@@ -75,11 +70,6 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
