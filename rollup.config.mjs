@@ -1,4 +1,3 @@
-import type { RollupOptions } from 'rollup';
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
@@ -7,7 +6,7 @@ import terser from '@rollup/plugin-terser'
 
 const libraryName = 'inplace-copy'
 
-const config: RollupOptions = {
+const config = {
   input: `src/${libraryName}.ts`,
   output: [
     { file: "dist/inplace-copy.umd.js", name: libraryName, format: 'umd', sourcemap: true },
