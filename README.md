@@ -53,12 +53,13 @@ the objects in the array are identical.
 ``` typescript
 const keyOfObject = (v: any, i: index) => v.id
 const copy = deepCopy({ keyOfObject })
-const xs = [{id: 'bob', age: 20}]
+const bob = {id: 'bob', age: 20}
+const xs = [bob]
 const ys = [{id: 'mary', age: 19}, {id: 'bob', age: 21}]
 const zs = copy(xs, ys)
 console.log(zs) // [{id: 'mary', age: 19}, {id: 'bob', age: 21}]
 console.log(Object.is(zs, xs)) // true
-console.log(Object.is(zs[1], xs[0])) // true
+console.log(Object.is(zs[1], bob)) // true
 ```
 
 ### copyMethods
